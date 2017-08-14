@@ -17,6 +17,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
+// Bluefruit Pin that is tied to the LiPo Battery.
 #define VBATPIN A9
 
 // Button 
