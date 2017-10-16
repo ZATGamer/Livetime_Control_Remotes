@@ -200,7 +200,7 @@ void set_key(int key_address) {
       menu_item++;
     }
     
-    if (menu_item > 28) menu_item = 1; // Set menu_item to valid value if out of range.
+    if (menu_item > 29) menu_item = 1; // Set menu_item to valid value if out of range.
 
     // Potential HID commands that the button can be set to.
     switch(menu_item) {
@@ -315,6 +315,10 @@ void set_key(int key_address) {
       case 28:
         flash_count_c(28);
         if (button_press == 1) EEPROM.write(key_address, 28), x = false;
+        break;
+      case 29:
+        flash_count_c(29);
+        if (button_press == 1) EEPROM.write(key_address, 29), x = false;
         break;
     }
     deBounce();

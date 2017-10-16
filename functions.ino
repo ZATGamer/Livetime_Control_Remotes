@@ -117,6 +117,11 @@ String translate_to_keycode(byte config_value){
       key_press_code = F("00-00-");
       key_press_code += String (hex_codes[config_value], HEX);
       break;
+    case 29:
+      // Return Key
+      key_press_code = F("00-00-");
+      key_press_code += String (hex_codes[config_value], HEX);
+      break;
   }
   return key_press_code;
 }
